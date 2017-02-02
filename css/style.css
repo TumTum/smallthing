@@ -1,0 +1,505 @@
+﻿html, body{
+	color:					#000;
+	background-color:		#eee;
+	padding:				0;
+	margin:					0;
+	font-family:			Calibri;
+}
+
+*{
+	outline:				0;
+}
+
+div.main-container{
+	margin:					0 auto;
+	width:					1000px;
+}
+
+div.header{
+	width:					100%;
+	background-color:		#343534;
+	padding:				35px 0;
+	text-align:				center;
+}
+
+div.header span.header-logo{
+	color:					#efefef;
+	font-size:				40px;
+	font-weight:			bold;
+}
+
+div.header span.header-logo span.header-beta{
+	color:					#e82603;
+	font-size:				16px;
+}
+
+div.menu{
+	width:					100%;
+	height:					40px;
+	background-color:		#676867;
+}
+
+a.menu{
+	float:					left;
+	color:					#efefef;
+	display:				block;
+	padding:				10px 20px;
+	text-decoration:		none;
+	background-color:		transparent;
+  	-webkit-transition: 	all 0.15s linear;
+  	-moz-transition: 		background-color 0.15s linear, color 0.15s linear;
+  	transition: 			background-color 0.15s linear, color 0.15s linear; 
+}
+
+a.menu:hover{
+	background-color:		#565756;
+}
+
+div.body{
+	width:					970px;
+	min-height:				470px;
+	background-color:		#dfdfdf;
+	padding:				15px;
+}
+
+div.footer{
+	width:					100%;
+	background-color:		#343534;
+	color:					#efefef;
+	text-align:				center;
+	padding:				15px 0;
+}
+
+.right{
+	float:					right;
+}
+
+.left{
+	float:					left;
+}
+
+input[type=text], select, input[type=password], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=week], input[type=email], input[type=number], input[type=search], input[type=tel], input[type=time], input[type=url], textarea {
+  	background-color: 		white;
+  	font-family: 			inherit;
+  	border: 				1px solid #cccccc;
+  	-webkit-box-shadow: 	inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  	box-shadow: 			inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  	color: 					rgba(0, 0, 0, 0.75);
+  	display: 				block;
+  	font-size: 				14px;
+  	margin: 				0 0 1em 0;
+  	padding: 				0.5em;
+  	height: 				2.3125em;
+  	width: 					100%;
+  	-moz-box-sizing: 		border-box;
+  	-webkit-box-sizing: 	border-box;
+  	box-sizing: 			border-box;
+  	-webkit-transition: 	all 0.15s linear;
+  	-moz-transition: 		all 0.15s linear;
+  	transition: 			all 0.15s linear; 
+}
+
+textarea.resize{
+	resize:					none;
+	min-height:				100px;
+}
+
+input[type=text]:focus, select, input[type=password]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=week]:focus, input[type=email]:focus, input[type=number]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, textarea:focus {
+    background: 			#fcfcfc;
+    border-color: 			#999999;
+    outline: 				none; 
+}
+
+input[type=text][disabled], select[disabled], input[type=password][disabled], input[type=date][disabled], input[type=datetime][disabled], input[type=datetime-local][disabled], input[type=month][disabled], input[type=week][disabled], input[type=email][disabled], input[type=number][disabled], input[type=search][disabled], input[type=tel][disabled], input[type=time][disabled], input[type=url][disabled], textarea[disabled] {
+    background-color: 		#dddddd; 
+}
+
+select{
+	cursor:					pointer;
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+	padding:				5px 15px;
+	margin:					3px 0;
+	background-color:		#f9f9f9;
+	border:					1px #999 solid;
+	cursor:					pointer;
+	font-weight:			bold;
+  	-webkit-transition: 	all 0.15s linear;
+  	-moz-transition: 		all 0.15s linear;
+  	transition: 			all 0.15s linear; 
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
+	background-color:		#e82603;
+	border-color:			#a60301;
+}
+
+input[type=button]:activ, input[type=submit]:activ, input[type=reset]:{
+	background-color:		#bcbcbc;
+	border-color:			#777;
+}
+
+.login-container{
+	width:					100%;
+	min-height:				300px;
+	margin:					25px 0;
+}
+
+.login-containerbox{
+	margin:					auto;
+	width:					500px;
+	background-color:		rgba(0, 0, 0, 0.1);
+	padding:				15px 0;
+}
+
+.login-box{
+	margin:					auto;
+	width:					400px;
+}
+
+.login-title{
+	color:					#000;
+	width:					100%;
+}
+
+.login-context{
+	float:					right;
+	display:				inline;
+	margin-top:				-40px;
+}
+
+.login-link{
+	color:					#e82603;
+	text-decoration:		none;
+	font-family:			Calibri;
+	font-size:				16px;
+	transition:				all 0.1s linear;
+}
+
+.login-link:hover{
+	color:					#343634;
+}
+
+.login-input{
+	float:					left;
+	width:					100%;
+}
+
+.login-slidebox{
+	float:					left;
+	width:					100%;
+	padding:				6.5px 0;
+}
+
+.login-button{
+	float:					left;
+	width:					100%;
+	margin-top:				-30px;
+}
+
+.clear{
+	clear:					both;
+}
+
+/* Checkbox */
+
+.slidebox-container{
+	float:					left;
+	width:					100%;
+}
+
+.slidebox-label{
+	float:					left;
+	padding:				3px 0 0 10px;
+}
+
+.slidebox {
+	width: 					80px;
+	height: 				26px;
+	background: 			#333;
+	margin: 				auto;
+
+	-webkit-border-radius: 	50px;
+	-moz-border-radius: 	50px;
+	border-radius: 			50px;
+	position:				relative;
+
+	-webkit-box-shadow: 	inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: 		inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: 			inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slidebox:after {
+	content: 				'OFF';
+	font: 					12px/26px Arial, sans-serif;
+	color: 					#bf0000;
+	position: 				absolute;
+	right: 					10px;
+	z-index: 				0;
+	font-weight: 			bold;
+}
+
+.slidebox:before {
+	content: 				'ON';
+	font: 					12px/26px Arial, sans-serif;
+	color: 					#00bf00;
+	position: 				absolute;
+	left: 					10px;
+	z-index: 				0;
+	font-weight: 			bold;
+}
+
+.slidebox label {
+	display: 				block;
+	width: 					34px;
+	height: 				20px;
+
+	-webkit-border-radius: 	50px;
+	-moz-border-radius: 	50px;
+	border-radius: 			50px;
+
+	-webkit-transition: 	all .4s ease;
+	-moz-transition: 		all .4s ease;
+	-o-transition: 			all .4s ease;
+	-ms-transition: 		all .4s ease;
+	transition: 			all .4s ease;
+	cursor: 				pointer;
+	position: 				absolute;
+	top: 					3px;
+	left: 					3px;
+	z-index: 				1;
+
+	-webkit-box-shadow: 	0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:		0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 			0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: 			#fcfff4;
+
+	background: 			-webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: 			-moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: 			-o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: 			-ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: 			linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter:					progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.slidebox input[type=checkbox]:checked + label {
+	left: 					43px;
+}
+
+.slidebox input[type=checkbox]{
+	display:				none;
+}
+
+/* Captcha */
+
+.captcha{
+	width:					100%;
+}
+
+.captcha-img{
+	background-image:		url('../../captcha/captcha.php');
+	width:					100px;
+	height:					30px;
+	float:					left;
+	cursor:					pointer;
+}
+
+.captcha-input{
+	width:					80px;
+	float:					left;
+}
+
+.captcha-input input{
+	text-align:				center;
+}
+
+/* Error Ausgabe */
+
+.errormessage{
+	color:					#000;
+	background:				#cc6666;
+	border:					1px red solid;
+	text-align:				center;	
+	font-size:				14px;
+	font-weight:			bold;
+	min-width:				380px;
+	max-width:				480px;
+	padding:				15px 10px;
+	margin:					10px auto;
+}
+
+.noterrormessage{
+	color:					#000;
+	background:				#88cc66;
+	border:					1px green solid;
+	text-align:				center;	
+	font-size:				14px;
+	font-weight:			bold;
+	min-width:				380px;
+	max-width:				480px;
+	padding:				15px 10px;
+	margin:					10px auto;
+}
+
+/* Profil */
+
+.profil-container{
+	width:					100%;
+	min-height:				300px;
+	margin:					25px 0;
+}
+
+.profil-containerbox{
+	margin:					auto;
+	width:					500px;
+	background-color:		rgba(0, 0, 0, 0.1);
+	padding:				15px 0;
+}
+
+.profil-title{
+	font-size:				20px;
+	color:					#343534;
+	font-weight:			bold;
+	padding:				0 0 0 15px;
+}
+
+.profil-content{
+	padding:				15px;
+	width:					470px;
+	color:					#343534;
+}
+
+.profil-td{
+	width:					470px;
+}
+
+.profil-tr{
+	width:					50%;
+	float:					left;
+}
+
+.profil-line{
+	width:					470px;
+	margin:					10px 0;
+	border-bottom:			1px #efefef solid;
+}
+
+.mid{
+	padding:				5px 0;
+}
+
+/* Userlist */
+
+.user-container{
+	width:					100%;
+	min-height:				300px;
+	margin:					25px 0;
+}
+
+.user-containerbox{
+	margin:					auto;
+	width:					500px;
+	background-color:		rgba(0, 0, 0, 0.1);
+	padding:				10px 0;
+}
+
+.user-title{
+	font-size:				20px;
+	color:					#343534;
+	font-weight:			bold;
+	padding:				0 0 10px 10px;
+}
+
+.user-content{
+	padding:				15px;
+	width:					470px;
+	color:					#343534;
+}
+
+.user-td{
+	width:					490px;
+	padding:				5px;
+	background-color:		rgba(0, 0, 0, 0.1);
+	border-bottom:			1px #efefef solid;
+}
+
+.user-line{
+	font-weight:			bold;
+}
+
+.user-tr{
+	float:					left;
+}
+
+.uname{
+	width:					200px;
+}
+
+.uoptions{
+	width:					270px;
+}
+
+.ulink{
+	width:					90px;
+}
+
+/* Link */
+
+a{
+	color:					#b50300;
+	text-decoration:		none;
+  	-webkit-transition: 	color 0.15s linear;
+  	-moz-transition: 		color 0.15s linear;
+  	transition: 			color 0.15s linear; 
+}
+
+a:hover{
+	color:					#e82603;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
