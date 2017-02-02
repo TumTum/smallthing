@@ -23,7 +23,7 @@
             overflow: hidden;
             background-color: #333;
             position: fixed;
-            left:0%;
+            left:0;
             top:0;
             z-index: 1;
             width: 100%;
@@ -72,7 +72,3 @@
 </ul>
 </body>
 </html>
-
-
-
-
