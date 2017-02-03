@@ -1,4 +1,6 @@
-<?php include "src/bootstrap.php" ?>
+<?php include "src/bootstrap.php";
+$mitarbeiterPage = new Controller\MitarbeiterPage();
+?>
 <html>
     <head>
         <title>Bitte Einloggen</title>
@@ -85,7 +87,7 @@
 	<div class="formular">
 	<br>
         <?php
-        if (isset($_GET['error'])) {
+        if ($mitarbeiterPage->hasError()) {
             echo '<p class="error">Fehler bei der Anmeldung!</p>';
         }
         ?> 
@@ -97,8 +99,8 @@
                              name="password" /> <br><br>
             <input class="button" type="submit" value="Login" /> <br><br>
         </form>
-        <p>Sie sind aktuell <?php echo $logged ?>.</p>
-		</div>
+        <p>Sie sind aktuell: <?php print $mitarbeiterPage->status() ?>.</p>
+    </div>
 		</div>
     </body>
 </html>
