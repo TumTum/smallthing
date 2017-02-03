@@ -26,6 +26,11 @@ class MitarbeiterPage
      */
     public function status()
     {
+        global $webSession;
+        $isLogin = $webSession->read('user-login');
+        if ($isLogin == true) {
+            return "Du bist eingelogt";
+        }
         return 'Nicht eingeloggt';
     }
 
@@ -48,7 +53,7 @@ class MitarbeiterPage
     public function login($webSession)
     {
         if ($this->UserUeberpruefen()) {
-            // Login bestanden
+            $webSession->write('user-login', true);
         }
     }
 
