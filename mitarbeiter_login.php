@@ -84,20 +84,18 @@
     <div id="logincontainer">
 	<div class="formular">
 	<br>
-   <form action="include/process_login_mitarbeiter.php" method="post" name="login_form"> 
         <?php
         if (isset($_GET['error'])) {
             echo '<p class="error">Fehler bei der Anmeldung!</p>';
         }
         ?> 
-        <form action="include/process_login_mitarbeiter.php" method="post" name="login_form">                      
+
+        <form action="#" method="post" name="login_form">
             <br>Email:<br><input class="text" type="" name="email" /> <br><br>
-            Passwort:<br> <input class="text" 
+            Passwort:<br> <input class="text"
 							 type="password"
                              name="password" /> <br><br>
-            <input class="button" type="submit"
-                   value="Login" 
-                   onclick="formhash(this.form, this.form.password);" /> <br><br> 
+            <input class="button" type="submit" value="Login" /> <br><br>
         </form>
         <p>Sie sind aktuell <?php echo $logged ?>.</p>
 		</div>
