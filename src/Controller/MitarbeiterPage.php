@@ -10,7 +10,9 @@ class MitarbeiterPage
      * Eine Liste aller User mit passwort
      * @var array
      */
-    protected $users = [];
+    protected $users = [
+        'fritz@cola.de' => 'NaDuPasswort'
+    ];
 
     /**
      * @var array
