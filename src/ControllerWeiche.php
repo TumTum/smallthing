@@ -32,7 +32,10 @@ class ControllerWeiche
     {
         $wunsch_controller = $_POST['controller_form'];
         switch ($wunsch_controller) {
-
+            case 'mitarbeiterPage.login':
+                $mitarbeiterPage = new \Controller\MitarbeiterPage();
+                $mitarbeiterPage->login($this->webSession);
+                break;
         }
     }
 }

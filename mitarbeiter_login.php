@@ -93,6 +93,7 @@ $mitarbeiterPage = new Controller\MitarbeiterPage();
         ?> 
 
         <form action="#" method="post" name="login_form">
+            <input type="hidden" name="controller_form" value="mitarbeiterPage.login">
             <br>Email:<br><input class="text" type="" name="email" /> <br><br>
             Passwort:<br> <input class="text"
 							 type="password"

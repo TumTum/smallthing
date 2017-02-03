@@ -24,4 +24,12 @@ class MitarbeiterPage
     {
         return false;
     }
+
+    /**
+     * @param $webSession
+     */
+    public function login($webSession)
+    {
+        
+    }
 }
