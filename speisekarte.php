@@ -1,4 +1,5 @@
- <html>
+<?php include "src/bootstrap.php" ?>
+<html>
  <head>
      <title>Fastfood MacAPPLE - Speisekarte</title>
      <style type="text/css">

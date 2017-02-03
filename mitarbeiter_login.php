@@ -1,17 +1,5 @@
-<?php
-//    include_once 'include/db_connect.php';
-//    include_once 'include/functions.php';
-//
-//
-//    session_start();
-//    $_SESSION['email'] = "email";
-//
-//    if (login_check($mysqli) == true) {
-//        $logged = 'eingeloggt';
-//    } else {
-//        $logged = 'ausgeloggt';
-//    }
-?><html>
+<?php include "src/bootstrap.php" ?>
+<html>
     <head>
         <title>Bitte Einloggen</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>

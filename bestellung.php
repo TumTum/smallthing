@@ -1,3 +1,4 @@
+<?php include "src/bootstrap.php" ?>
 <html>
 <head>
     <title>Fastfood MacAPPLE - Bestellung</title>
