@@ -7,6 +7,12 @@ class MitarbeiterPage
 {
 
     /**
+     * Eine Liste aller User mit passwort
+     * @var array
+     */
+    protected $users = [];
+
+    /**
      * @var array
      */
     protected static $errors = [];
@@ -64,6 +70,22 @@ class MitarbeiterPage
             return false;
         }
 
+        $email    = $_POST['email'];
+        $password = $_POST['password'];
+
+        // Überprüfen ob der User existiert
+        if (isset($this->users[$email]) == false) {
+            self::$errors[] = 'Fehler Email Adresse wurde nicht registriert';
+            return false;
+        }
+
+        // Übperprüfen ob das Passwort stimmt
+        if ($this->users[$email] != $password) {
+            self::$errors[] = 'Passwort ist Falsch';
+            return false;
+        }
+
+        // Wenn bis jetzt kein Fehler auf getreten ist das stimmt wohl alles
         return true;
     }
 
