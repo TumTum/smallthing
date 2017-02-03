@@ -29,7 +29,7 @@ class MitarbeiterPage
         global $webSession;
         $isLogin = $webSession->read('user-login');
         if ($isLogin == true) {
-            return "Du bist eingelogt";
+            return "Du bist eingelogt als: " . $webSession->read('user-username');
         }
         return 'Nicht eingeloggt';
     }
@@ -54,6 +54,7 @@ class MitarbeiterPage
     {
         if ($this->UserUeberpruefen()) {
             $webSession->write('user-login', true);
+            $webSession->write('user-username', $_POST['email']);
         }
     }
 
